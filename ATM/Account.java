@@ -87,7 +87,7 @@ public class Account {
 		boolean end = false;
 		while (!end) {
 			try {
-				System.out.println("\nCurrent Checkings Account Balance: " + moneyFormat.format(checkingBalance));
+				System.out.println("\nCurrent Checking Account Balance is: " + moneyFormat.format(checkingBalance));
 				System.out.print("\nAmount you want to withdraw from Checkings Account: ");
 				double amount = input.nextDouble();
 				if ((checkingBalance - amount) >= 0 && amount >= 0) {
@@ -108,7 +108,7 @@ public class Account {
 		boolean end = false;
 		while (!end) {
 			try {
-				System.out.println("\nCurrent Savings Account Balance: " + moneyFormat.format(savingBalance));
+				System.out.println("\nCurrent Savings Account Balance is: " + moneyFormat.format(savingBalance));
 				System.out.print("\nAmount you want to withdraw from Savings Account: ");
 				double amount = input.nextDouble();
 				if ((savingBalance - amount) >= 0 && amount >= 0) {
@@ -129,7 +129,7 @@ public class Account {
 		boolean end = false;
 		while (!end) {
 			try {
-				System.out.println("\nCurrent Checkings Account Balance: " + moneyFormat.format(checkingBalance));
+				System.out.println("\nCurrent Checking Account Balance is: " + moneyFormat.format(checkingBalance));
 				System.out.print("\nAmount you want to deposit from Checkings Account: ");
 				double amount = input.nextDouble();
 				if ((checkingBalance + amount) >= 0 && amount >= 0) {
@@ -150,7 +150,7 @@ public class Account {
 		boolean end = false;
 		while (!end) {
 			try {
-				System.out.println("\nCurrent Savings Account Balance: " + moneyFormat.format(savingBalance));
+				System.out.println("\nCurrent Savings Account Balance is: " + moneyFormat.format(savingBalance));
 				System.out.print("\nAmount you want to deposit into your Savings Account: ");
 				double amount = input.nextDouble();
 
@@ -175,7 +175,8 @@ public class Account {
 				if (accType.equals("Checkings")) {
 					System.out.println("\nSelect an account you wish to tranfers funds to:");
 					System.out.println("1. Savings");
-					System.out.println("2. Exit");
+					System.out.println("2. Other Checking Account");
+					System.out.println("3. Exit");
 					System.out.print("\nChoice: ");
 					int choice = input.nextInt();
 					switch (choice) {
