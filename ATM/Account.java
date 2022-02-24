@@ -175,7 +175,8 @@ public class Account {
 				if (accType.equals("Checkings")) {
 					System.out.println("\nSelect an account you wish to tranfers funds to:");
 					System.out.println("1. Savings");
-					System.out.println("2. Exit");
+					ystem.out.println("2. Other Savings or Checking");
+					SSystem.out.println("2. Exit");
 					System.out.print("\nChoice: ");
 					int choice = input.nextInt();
 					switch (choice) {
@@ -201,8 +202,9 @@ public class Account {
 					}
 				} else if (accType.equals("Savings")) {
 					System.out.println("\nSelect an account you wish to tranfers funds to: ");
-					System.out.println("1. Checkings");
-					System.out.println("2. Exit");
+					System.out.println("1. Checking");
+					System.out.println("2. Other Savings");
+					System.out.println("3. Exit");
 					System.out.print("\nChoice: ");
 					int choice = input.nextInt();
 					switch (choice) {
