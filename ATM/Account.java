@@ -87,7 +87,7 @@ public class Account {
 		boolean end = false;
 		while (!end) {
 			try {
-				System.out.println("\nCurrent Checkings Account Balance: " + moneyFormat.format(checkingBalance));
+				System.out.println("\nCurrent Checking Account Balance is: " + moneyFormat.format(checkingBalance));
 				System.out.print("\nAmount you want to withdraw from Checkings Account: ");
 				double amount = input.nextDouble();
 				if ((checkingBalance - amount) >= 0 && amount >= 0) {
